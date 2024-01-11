@@ -77,8 +77,17 @@ def max_subarray(arr):
   return max_sum    
       
 ```
+Explanation:
 
-### Q5: Define tuples and lists in Python What are the major differences between them? ###
+1. max_sum is initialized with the first element of the array (arr[0]).
+2. curr_sum is used to keep track of the sum of the current subarray and is initialized to 0.
+3. The algorithm iterates through each element of the array using a for loop.
+4. For each element, curr_sum is updated by adding the current element.
+5. max_sum is updated to store the maximum value between the current max_sum and the current curr_sum.
+6. If curr_sum becomes negative at any point, it means that continuing the current subarray would only decrease the sum, so the algorithm resets curr_sum to 0, effectively            starting a new potential subarray.
+7. After the loop completes, the function returns the maximum sum found.
+
+### Q5: Define tuples and lists in Python. What are the major differences between them? ###
 
 Answer:
 
